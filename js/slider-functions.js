@@ -1,10 +1,11 @@
 $(document).ready(function(){
 
 		// show/hide sidebar nav
-		$("#Right-Slider,#continue-shopping").click(function(){
+		$("#Right-Slider,#continue-shopping,.overlay").click(function(){
 			$(".content").toggleClass("content-expand");
 			$(".right-sidebar").toggleClass("right-sidebar-collpase");
 			$("body").toggleClass("disable-scroll");
+			$(".overlay").toggleClass("overlay-active");
 		});	
 
 		// decrease quantity in input[number]
