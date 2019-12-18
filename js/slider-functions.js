@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 		// decrease quantity in input[number]
 		$(".minus").click(function(){
-			var $minus = $(".input-item-quantity");
+			var $minus = $(this).next();
 			var val = $minus.val();
 			val--;
 
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 		// increase quantity in input[number]
 		$(".add").click(function(){
-			var $add = $(".input-item-quantity");
+			var $add = $(this).prev();
 			var val = $add.val();
 			val++;
 
